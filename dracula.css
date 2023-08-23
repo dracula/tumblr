@@ -22,8 +22,6 @@
 	--color-bluespace-card-background: rgba(var(--white-on-dark), 0.07);
 	--color-modal-close-button: rgb(var(--navy));
 	--color-modal-close-button-background: rgb(var(--white-on-dark));
-	--font-family: "Favorit", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
-	--border-radius-small: 3px;
 }
 
 /* bg set */
