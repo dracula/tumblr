@@ -14,6 +14,6 @@ Download using the [GitHub `.zip` download](https://github.com/dracula/tumblr/ar
 
 #### Activating theme
 
-1. Do this;
-2. Then that;
+1. Add css to css theme manager;
+2. Press save;
 3. Boom! It's working ✨
