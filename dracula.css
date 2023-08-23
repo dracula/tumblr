@@ -1,0 +1,84 @@
+:root {
+	--black: 248, 248, 242; /* post fg */
+	--white: 68, 71, 90; /* post bg */
+	--white-on-dark: 248, 248, 242; /* main fg */
+	--navy: 40, 42, 54; /* main bg */
+	--red: 255, 85, 85;
+	--orange: 255, 184, 108;
+	--yellow: 241, 250, 140
+	--green: 80, 250, 123;
+	--cyan: 139, 233, 253;
+	--purple: 189, 147, 249;
+	--pink: 255, 121, 198;
+	--accent: var(--purple);
+	--secondary-accent: var(--pink);
+	--border: 98, 114, 164;
+	--follow: 255, 64, 128; /* doesn't seem to do anything, if you see this color create an issue on my github. */
+	--color-title: rgb(var(--white-on-dark));
+	--color-text: rgb(var(--white-on-dark));
+	--color-subtext: rgb(var(--white-on-dark));
+	--color-primary-link: rgb(var(--accent));
+	--color-bluespace-background: rgb(var(--navy));
+	--color-bluespace-card-background: rgba(var(--white-on-dark), 0.07);
+	--color-modal-close-button: rgb(var(--navy));
+	--color-modal-close-button-background: rgb(var(--white-on-dark));
+	--font-family: "Favorit", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+	--border-radius-small: 3px;
+}
+
+/* bg set */
+.view_container,
+body
+{
+	background-color: rgb(var(--navy));
+}
+/* alt bg set */
+.fieldset
+{
+	background-color: rgb(var(--white));
+}
+/* fg set */
+.fieldset,
+.field_row,
+.field_row .input_prefix,
+.field_row input,
+.field_row select,
+.field_row textarea,
+.field_row .tooltip_container .icon_help,
+.flat_select .icon,
+.bold_switch .bold_switch_button,
+body
+{
+	color: rgb(var(--white-on-dark));
+}
+/* border set */
+.fieldset
+{
+	border-color: rgb(var(--border));
+}
+/* bg=accent2 */
+.binary_switch input[type="checkbox"]:checked~.binary_switch_track
+{
+	background-color: rgb(var(--secondary-accent));
+}
+/* border=accent2 */
+.field_row_shape .flat_radio input[type="radio"]:checked~.flat_radio_marker
+{
+	border-color: rgb(var(--secondary-accent));
+}
+/* whatever this is */
+.bold_switch .bold_switch_track {
+	background-image: radial-gradient(rgb(var(--accent)) 0px, rgba(0,0,0,0) 75%);
+}
+.bold_switch input[type="checkbox"]:checked~.bold_switch_button {
+	color: rgb(var(--accent))
+}
+.button.disabled.blue,
+.button.blue
+{
+	background-color: rgb(var(--cyan));
+	color: rgb(var(--navy))
+}
+.Knight-Rider-bar {
+	background-color: rgb(var(--navy)) !important;
+}
