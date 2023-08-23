@@ -26,12 +26,17 @@
 
 /* bg set */
 .view_container,
-body
+body,
+.identity,
+.l-header-container--refresh
 {
 	background-color: rgb(var(--navy));
 }
 /* alt bg set */
-.fieldset
+.fieldset,
+.oPa7v,
+.l-container.l-container--full-width-gutterless .l-content,
+.l-container.l-container--full-width .l-content
 {
 	background-color: rgb(var(--white));
 }
@@ -45,26 +50,35 @@ body
 .field_row .tooltip_container .icon_help,
 .flat_select .icon,
 .bold_switch .bold_switch_button,
-body
+body,
+.corp_page .corp_page_title,
+.corp_page .left_column h1,
+#left_column,
+a
 {
 	color: rgb(var(--white-on-dark));
 }
 /* border set */
-.fieldset
+.fieldset,
+.l-header-container--refresh,
+.corp_page .vertical_tab>a
 {
 	border-color: rgb(var(--border));
 }
+
 /* bg=accent2 */
-.binary_switch input[type="checkbox"]:checked~.binary_switch_track
+.binary_switch input[type="checkbox"]:checked~.binary_switch_track,
+.UZrDG.U_rPn
 {
-	background-color: rgb(var(--secondary-accent));
+	background-color: rgb(var(--secondary-accent)) !important;
 }
 /* border=accent2 */
 .field_row_shape .flat_radio input[type="radio"]:checked~.flat_radio_marker
 {
 	border-color: rgb(var(--secondary-accent));
 }
-/* whatever this is */
+
+/* =================== whatever this is =================== */
 .bold_switch .bold_switch_track {
 	background-image: radial-gradient(rgb(var(--accent)) 0px, rgba(0,0,0,0) 75%);
 }
@@ -72,11 +86,47 @@ body
 	color: rgb(var(--accent))
 }
 .button.disabled.blue,
-.button.blue
+.button.blue,
+.chrome.blue
 {
 	background-color: rgb(var(--cyan));
-	color: rgb(var(--navy))
+	color: rgb(var(--navy));
+	border-color: rgb(var(--cyan));
+}
+.chrome.green
+{
+	background-color: rgb(var(--green));
+	color: rgb(var(--navy));
+	border-color: rgb(var(--green));
 }
 .Knight-Rider-bar {
 	background-color: rgb(var(--navy)) !important;
+}
+.chrome.browser_ext_button::before  {
+	background-image: url("http://assets.tumblr.com/images/logo/alt/t_black_small.png");
+	width: 14px;
+	height: 25px;
+	margin-top: 9px;
+}
+.corp_page_about #nav_about,
+.corp_page_help #nav_help,
+.corp_page_contact #nav_contact,
+.corp_page_apps #nav_apps,
+.corp_page_tips #nav_tips,
+.corp_page_buttons #nav_buttons,
+.corp_page_causes #nav_causes,
+.corp_page_press #nav_press,
+.corp_page_team #nav_team,
+.corp_page_jobs #nav_jobs,
+.corp_page_developers #nav_developers,
+.corp_page_sponsors #nav_sponsors,
+.corp_page_policy .terms #nav_terms,
+.corp_page_policy .privacy #nav_privacy,
+.corp_page_policy .community #nav_community,
+.corp_page_policy .impressum #nav_impressum,
+.corp_page_policy .advertising #nav_advertising
+{
+	background-image: linear-gradient(to bottom,
+		rgb(var(--border)), rgb(var(--white)) 25%,
+		rgb(var(--white)) 70%, rgb(var(--border)));
 }
