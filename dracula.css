@@ -131,6 +131,6 @@ a
 		rgb(var(--white)) 70%, rgb(var(--border)));
 }
 [data-testid="scroll-container"] .SLpX8,
-[data-testid="scroll-container"] .BSUG4
+[data-testid="scroll-container"] .BSUG4:not(.Da0mp)
 {	color: #000;
 }
