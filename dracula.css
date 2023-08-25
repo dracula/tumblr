@@ -1,44 +1,42 @@
 :root {
-	--black: 248, 248, 242; /* post fg */
-	--white: 68, 71, 90; /* post bg */
-	--white-on-dark: 248, 248, 242; /* main fg */
-	--navy: 40, 42, 54; /* main bg */
-	--red: 255, 85, 85;
-	--orange: 255, 184, 108;
-	--yellow: 241, 250, 140;
-	--green: 80, 250, 123;
-	--cyan: 139, 233, 253;
-	--purple: 189, 147, 249;
-	--pink: 255, 121, 198;
-	--accent: var(--purple);
-	--secondary-accent: var(--pink);
-	--border: 98, 114, 164;
-	--follow: 255, 64, 128; /* doesn't seem to do anything, if you see this color create an issue on my github. */
-	--color-title: rgb(var(--white-on-dark));
-	--color-text: rgb(var(--white-on-dark));
-	--color-subtext: rgb(var(--white-on-dark));
-	--color-primary-link: rgb(var(--accent));
-	--color-bluespace-background: rgb(var(--navy));
-	--color-bluespace-card-background: rgba(var(--white-on-dark), 0.07);
-	--color-modal-close-button: rgb(var(--navy));
-	--color-modal-close-button-background: rgb(var(--white-on-dark));
+  --black: 248, 248, 242; /* post fg */
+  --white: 68, 71, 90; /* post bg */
+  --white-on-dark: 248, 248, 242; /* main fg */
+  --navy: 40, 42, 54; /* main bg */
+  --red: 255, 85, 85;
+  --orange: 255, 184, 108;
+  --yellow: 241, 250, 140;
+  --green: 80, 250, 123;
+  --cyan: 139, 233, 253;
+  --purple: 189, 147, 249;
+  --pink: 255, 121, 198;
+  --accent: var(--purple);
+  --secondary-accent: var(--pink);
+  --border: 98, 114, 164;
+  --follow: 255, 64, 128; /* doesn't seem to do anything, if you see this color create an issue on my github. */
+  --color-title: rgb(var(--white-on-dark));
+  --color-text: rgb(var(--white-on-dark));
+  --color-subtext: rgb(var(--white-on-dark));
+  --color-primary-link: rgb(var(--accent));
+  --color-bluespace-background: rgb(var(--navy));
+  --color-bluespace-card-background: rgba(var(--white-on-dark), 0.07);
+  --color-modal-close-button: rgb(var(--navy));
+  --color-modal-close-button-background: rgb(var(--white-on-dark));
 }
 
 /* bg set */
 .view_container,
 body,
 .identity,
-.l-header-container--refresh
-{
-	background-color: rgb(var(--navy));
+.l-header-container--refresh {
+  background-color: rgb(var(--navy));
 }
 /* alt bg set */
 .fieldset,
 .oPa7v,
 .l-container.l-container--full-width-gutterless .l-content,
-.l-container.l-container--full-width .l-content
-{
-	background-color: rgb(var(--white));
+.l-container.l-container--full-width .l-content {
+  background-color: rgb(var(--white));
 }
 /* fg set */
 .fieldset,
@@ -54,59 +52,56 @@ body,
 .corp_page .corp_page_title,
 .corp_page .left_column h1,
 #left_column,
-a
-{
-	color: rgb(var(--white-on-dark));
+a {
+  color: rgb(var(--white-on-dark));
 }
 /* border set */
 .fieldset,
 .l-header-container--refresh,
-.corp_page .vertical_tab>a
-{
-	border-color: rgb(var(--border));
+.corp_page .vertical_tab > a {
+  border-color: rgb(var(--border));
 }
 
 /* bg=accent2 */
-.binary_switch input[type="checkbox"]:checked~.binary_switch_track,
-.UZrDG.U_rPn
-{
-	background-color: rgb(var(--secondary-accent)) !important;
+.binary_switch input[type="checkbox"]:checked ~ .binary_switch_track,
+.UZrDG.U_rPn {
+  background-color: rgb(var(--secondary-accent)) !important;
 }
 /* border=accent2 */
-.field_row_shape .flat_radio input[type="radio"]:checked~.flat_radio_marker
-{
-	border-color: rgb(var(--secondary-accent));
+.field_row_shape .flat_radio input[type="radio"]:checked ~ .flat_radio_marker {
+  border-color: rgb(var(--secondary-accent));
 }
 
 /* =================== whatever this is =================== */
 .bold_switch .bold_switch_track {
-	background-image: radial-gradient(rgb(var(--accent)) 0px, rgba(0,0,0,0) 75%);
+  background-image: radial-gradient(
+    rgb(var(--accent)) 0px,
+    rgba(0, 0, 0, 0) 75%
+  );
 }
-.bold_switch input[type="checkbox"]:checked~.bold_switch_button {
-	color: rgb(var(--accent))
+.bold_switch input[type="checkbox"]:checked ~ .bold_switch_button {
+  color: rgb(var(--accent));
 }
 .button.disabled.blue,
 .button.blue,
-.chrome.blue
-{
-	background-color: rgb(var(--cyan));
-	color: rgb(var(--navy));
-	border-color: rgb(var(--cyan));
+.chrome.blue {
+  background-color: rgb(var(--cyan));
+  color: rgb(var(--navy));
+  border-color: rgb(var(--cyan));
 }
-.chrome.green
-{
-	background-color: rgb(var(--green));
-	color: rgb(var(--navy));
-	border-color: rgb(var(--green));
+.chrome.green {
+  background-color: rgb(var(--green));
+  color: rgb(var(--navy));
+  border-color: rgb(var(--green));
 }
 .Knight-Rider-bar {
-	background-color: rgb(var(--navy)) !important;
+  background-color: rgb(var(--navy)) !important;
 }
-.chrome.browser_ext_button::before  {
-	background-image: url("http://assets.tumblr.com/images/logo/alt/t_black_small.png");
-	width: 14px;
-	height: 25px;
-	margin-top: 9px;
+.chrome.browser_ext_button::before {
+  background-image: url("http://assets.tumblr.com/images/logo/alt/t_black_small.png");
+  width: 14px;
+  height: 25px;
+  margin-top: 9px;
 }
 .corp_page_about #nav_about,
 .corp_page_help #nav_help,
@@ -124,15 +119,17 @@ a
 .corp_page_policy .privacy #nav_privacy,
 .corp_page_policy .community #nav_community,
 .corp_page_policy .impressum #nav_impressum,
-.corp_page_policy .advertising #nav_advertising
-{
-	background-image: linear-gradient(to bottom,
-		rgb(var(--border)), rgb(var(--white)) 25%,
-		rgb(var(--white)) 70%, rgb(var(--border)));
+.corp_page_policy .advertising #nav_advertising {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(var(--border)),
+    rgb(var(--white)) 25%,
+    rgb(var(--white)) 70%,
+    rgb(var(--border))
+  );
 }
 [data-testid="scroll-container"] .SLpX8,
 [data-testid="scroll-container"] .BSUG4:not(.Da0mp),
-.k31gt a
-{
-	color: #00F;
+.k31gt a {
+  color: #00f;
 }
